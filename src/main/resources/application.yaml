@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+      # In Application configuration file specify 'spring.profiles.active = dev'
+server:
+  port: 8000
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+      # Same as above, 'spring.profiles.active = test', if you don't set anything, it uses the default
+      # port of 8080
+server:
+  port: 9000
